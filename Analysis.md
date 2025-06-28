@@ -1,0 +1,13 @@
+# Analysis
+
+## 1. System Description
+
+The problem of expensive skill learning and underutilized personal expertise affects individuals seeking personal development and skill acquisition. While facing high barriers to entry formal education, many individuals with unique sets of expertise struggle to share their knowledge. SkillSwap addresses this gap through a local peer-to-peer skill exchange platform which allows for costless skill barter sessions through community-driven learning. In contrast to costly online and offline educational institutions, our product emphasizes human interaction, supports hands-on training, and embraces barter systems for skill development. Through direct skills exchange, SkillSwap shifts power back to the users and makes education affordable while facilitating social interactions.
+
+**Users** can ***create*** customized **Profiles** that showcase their expertise and **skills** they want to learn, allowing them to engage with relevant **skill** partners within the community. Every User has a *name*, *email*, *location*, and *bio* which is joined by a **Profile** containing *availability*, *meeting preferences* and *bio*. **Users** are ***matched*** in the system based on their **Skills** through intelligent algorithms taking into consideration *proximity*, *availability of time*, and *compatibility variables*. **Skills** consist of *name*, *category*, Expertise *level*, and *description* which allows precise matching as **users** have diverse needs. Learning exchange for **Users** takes place through coordination **Messages** containing *content*, *timestamp*, and *id*.
+
+When **Users** want to learn together, they ***schedule*** **Sessions** with the *date*, *time*, *duration*, *type*, and *status* attributes. These **Sessions** can be held online via **VideoCall**, which monitors *duration*, and *notes*. Post learning exchange, **Users** ***provide*** reviews with *ratings*, and *comments*.  
+
+For **Users/Learners** needing expert guidance or when didn't find a match, **Experts** as a distinct category of **Users** *offer* paid **Sessions** which has *price*, *duration*, *topic*, and payment *status*. The platform also supports **Notifications** containing *title* and *message* alongside *status* marking unread/read enabling user awareness on ***matches***, reminders for **sessions** *date*, and *time* and more.
+
+Location based matching is facilitated through **Location** data that contains *street*, *city*, *state*, and *radius* information. Users can join **Groups** focused on specific **skills** or **interests**, where each **Group** has *name*, *description*, and *people* details to foster community building.
