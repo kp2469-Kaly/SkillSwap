@@ -45,3 +45,86 @@ Our app offers direct human connection, personalized teaching in a friendly mann
 1. Ease of use, user should be able to create profile within 5 minutes and find matches quickly and easily
 2. Security, which involves data protection, identity verification, and reporting system
 
+## 5. MVP
+
+1. User profile creation
+2. Add skills to learn and skills to teach
+3. Search for skill matches
+4. Basic messaging
+5. Basic session scheduling and calendar
+6. Rating
+
+## 6. Use Cases
+
+### 6.1 Use Case Diagram
+<img width="376" alt="image" src="https://github.com/user-attachments/assets/b052f44b-74b4-417c-b7a3-5ad15c65a9ac" />
+
+### 6.1 Use Case Descriptions and Interface Sketches
+#### Use Case 1: Create User Profile
+**Actor:** User  
+**Trigger:** User decides to create SkillSwap account
+**Pre-conditions:** User has downloaded the app and completed registration  
+**Post-conditions:** User profile is created with skills offered and skills wanted  
+
+**Success Scenario:**
+1. User selects "Create Account" option
+2. System prompts for basic information
+3. User fills the info.
+4. System requests skills user can teach
+5. User enters the skills
+6. System requests skills user wants to learn
+7. User enters the desired skills
+8. System saves profile and displays confirmation
+
+**Alternate Scenarios:**
+1a. User decides not to create account
+  1. User exits from the app
+3a. User leaves blank or enters invalid details
+  1. System displays error message
+5a. User leaves blank or enters invalid skills
+  1. System displays error message
+8a. System unable to create account due to technical or server errors
+  1. System displays error message
+
+#### Use Case 2: Schedule Session
+**Actor:** User  
+**Trigger:** User wants to arrange a learning session with matched user
+**Pre-conditions:** Users had a match and planned to connect via a virtual session
+**Post-conditions:** Session is scheduled in both users' calendars
+
+**Success Scenario:**
+1. User selects "Schedule Session" option
+2. System displays calendar interface
+4. User selects the time slots based on the discussion
+5. User enters the username of the other user
+6. System sends scheduling request to other user
+7. Other user accepts proposed time
+8. System confirms session and adds to both calendars
+
+**Alternate Scenarios:**
+1a. Users decides not to connect in a virtual session
+  1. User cancels session creation
+5a. User enters wrong details of other user
+  1. System displays error message saying "No such user"
+6a. System unable to send the request to other user
+  1. System displays error message
+7a. Other user declines
+  1. System sends a notification
+8a. System unable to create account due to technical or server errors
+  1. System displays error message
+
+### Interface Sketches:
+<img width="202" alt="image" src="https://github.com/user-attachments/assets/c9c891fa-d3bd-4ec0-a48c-76923eeb4e50" />
+<img width="206" alt="image" src="https://github.com/user-attachments/assets/dad225c1-7162-41d0-96c9-6e19f830bb33" />
+
+## 7. User Stories
+
+1. As a learner, I want to specify what skills I want to learn so that the app can match me with relevant teachers.
+2. As a teacher, I want to confirm session details so that both parties are clear on expectations.
+3. As a hobbyist, I want to teach skills to others so that I can spend a valuable time sharing knowledge while helping others grow.
+4. As a learner, I want live virtual sessions for teaching so that I can understand better.
+
+## 8. Issue Tracker
+
+https://github.com/kp2469-Kaly/SkillSwap/issues
+
