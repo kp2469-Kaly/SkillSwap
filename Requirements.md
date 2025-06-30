@@ -1,4 +1,4 @@
-# Group 2: SkillSwap
+# Group 2: "SkillSwap"
 ## Deliverable 2: Software Requirements
 
 ## 1. Positioning
