@@ -11,3 +11,7 @@ When **Users** want to learn together, they ***schedule*** **Sessions** with the
 For **Users/Learners** needing expert guidance or when didn't find a match, **Experts** as a distinct category of **Users** *offer* paid **Sessions** which has *price*, *duration*, *topic*, and payment *status*. The platform also supports **Notifications** containing *title* and *message* alongside *status* marking unread/read enabling user awareness on ***matches***, reminders for **sessions** *date*, and *time* and more.
 
 Location based matching is facilitated through **Location** data that contains *street*, *city*, *state*, and *radius* information. Users can join **Groups** focused on specific **skills** or **interests**, where each **Group** has *name*, *description*, and *people* details to foster community building.
+
+## 1. Conceptual Model
+![Screenshot 2025-06-29 123516](https://github.com/user-attachments/assets/73c9a16b-f9fe-436b-8ba0-2e610c822277)
+
