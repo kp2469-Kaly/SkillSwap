@@ -4,7 +4,7 @@
 
 SkillSwap is a revolutionary local peer-to-peer skill exchange platform that addresses the problem of expensive skill learning and underutilized personal expertise. Our system enables individuals to share their knowledge through community-driven learning, eliminating the high barriers to entry associated with formal education. Unlike costly online and offline educational institutions, SkillSwap emphasizes human interaction, supports hands-on training, and embraces barter systems for skill development.
 
-The platform allows users to create customized profiles showcasing their expertise and skills they want to learn, facilitating engagement with relevant skill partners within their community. Key features include intelligent matching algorithms based on proximity, availability, and compatibility; session scheduling for both online and offline learning exchanges; expert consultation services for specialized guidance; location-based matching; community groups for skill-focused interactions; and comprehensive review and rating systems.
+The platform allows users to create customized profiles showcasing their expertise and skills they want to learn, facilitating engagement with relevant skill partners within their community. Key features include intelligent matching algorithms based on proximity, and skill requirements; session scheduling for learning exchanges, and expert consultation services for specialized guidance with review and rating submission facility; community groups for skill-focused interactions;
 
 **Value Proposition:** SkillSwap is a community-driven platform designed to facilitate personalized pedagogical exchanges by enabling people to exchange skills directly, affordable, and socially connected.
 
@@ -22,37 +22,37 @@ The platform allows users to create customized profiles showcasing their experti
 
 **Requirement:** As a user, I want to create and customize my profile with expertise and learning goals so that I can connect with relevant skill partners in my community.
 
-**Issue:** [https://github.com/your-team/skillswap/issues/45](https://github.com/your-team/skillswap/issues/45)
+**Issue:** https://github.com/kp2469-Kaly/SkillSwap/issues/9
 
 **Pull Request:** [https://github.com/your-team/skillswap/pull/426](https://github.com/your-team/skillswap/pull/426)
 
-**Implemented by:** [Team Member 1 Name]
+**Implemented by:** Kalyana
 
-**Approved by:** [Team Member 2 Name]
+**Approved by:** Ashrith
 
 **Automated Tests:** [https://github.com/your-team/skillswap/blob/main/tests/test_profile.py](https://github.com/your-team/skillswap/blob/main/tests/test_profile.py)
 
 **Visual Evidence:**
 ![Profile Creation Interface](path/to/profile-creation-screenshot.png)
 
-#### 2.1.2 Skill Matching Algorithm
+#### 2.1.2 Skill Matching
 
-**Requirement:** As a user, I want to be matched with potential skill partners based on proximity, availability, and compatibility so that I can find relevant learning opportunities.
+**Requirement:** As a user, I want to be matched with potential skill partners based on proximity, so that I can find relevant learning opportunities.
 
-**Issue:** [https://github.com/your-team/skillswap/issues/52](https://github.com/your-team/skillswap/issues/52)
+**Issue:** https://github.com/kp2469-Kaly/SkillSwap/issues/10
 
 **Pull Request:** [https://github.com/your-team/skillswap/pull/438](https://github.com/your-team/skillswap/pull/438)
 
-**Implemented by:** [Team Member 1 Name]
+**Implemented by:** Ashrith
 
-**Approved by:** [Team Member 3 Name]
+**Approved by:** Kalyana
 
 **Automated Tests:** [https://github.com/your-team/skillswap/blob/main/tests/test_matching.py](https://github.com/your-team/skillswap/blob/main/tests/test_matching.py)
 
 **Visual Evidence:**
 ![Matching Results Interface](path/to/matching-results-screenshot.png)
 
-### 2.2 [Team Member 2 Name]
+### 2.2 Ashrith
 
 **Pull Requests Overview:** [https://github.com/your-team/skillswap/pulls?q=is%3Apr+author%3ATeamMember2](https://github.com/your-team/skillswap/pulls?q=is%3Apr+author%3ATeamMember2)
 
@@ -62,115 +62,35 @@ The platform allows users to create customized profiles showcasing their experti
 
 **Requirement:** As a user, I want to schedule learning sessions with my skill partners so that we can coordinate our knowledge exchange effectively.
 
-**Issue:** [https://github.com/your-team/skillswap/issues/63](https://github.com/your-team/skillswap/issues/63)
+**Issue:** https://github.com/kp2469-Kaly/SkillSwap/issues/11
 
 **Pull Request:** [https://github.com/your-team/skillswap/pull/445](https://github.com/your-team/skillswap/pull/445)
 
-**Implemented by:** [Team Member 2 Name]
+**Implemented by:** Ashrith
 
-**Approved by:** [Team Member 1 Name]
+**Approved by:** Kalyana
 
 **Automated Tests:** [https://github.com/your-team/skillswap/blob/main/tests/test_sessions.py](https://github.com/your-team/skillswap/blob/main/tests/test_sessions.py)
 
 **Visual Evidence:**
 ![Session Scheduling Interface](path/to/session-scheduling-screenshot.png)
 
-#### 2.2.2 Video Call Integration
+#### 2.2.2 FrontEnd Connection
 
 **Requirement:** As a user, I want to conduct online learning sessions through integrated video calls so that I can learn remotely when in-person meetings aren't possible.
 
-**Issue:** [https://github.com/your-team/skillswap/issues/71](https://github.com/your-team/skillswap/issues/71)
+**Issue:** https://github.com/kp2469-Kaly/SkillSwap/issues/12
 
 **Pull Request:** [https://github.com/your-team/skillswap/pull/452](https://github.com/your-team/skillswap/pull/452)
 
-**Implemented by:** [Team Member 2 Name]
+**Implemented by:** Kalyana
 
-**Approved by:** [Team Member 4 Name]
+**Approved by:** Ashrith
 
 **Automated Tests:** [https://github.com/your-team/skillswap/blob/main/tests/test_video_calls.py](https://github.com/your-team/skillswap/blob/main/tests/test_video_calls.py)
 
 **Visual Evidence:**
 ![Video Call Interface](path/to/video-call-screenshot.png)
-
-### 2.3 [Team Member 3 Name]
-
-**Pull Requests Overview:** [https://github.com/your-team/skillswap/pulls?q=is%3Apr+author%3ATeamMember3](https://github.com/your-team/skillswap/pulls?q=is%3Apr+author%3ATeamMember3)
-
-![Pull Requests Screenshot](path/to/pr-screenshot-member3.png)
-
-#### 2.3.1 Review and Rating System
-
-**Requirement:** As a user, I want to provide and view reviews and ratings for skill exchange sessions so that I can make informed decisions about future learning partners.
-
-**Issue:** [https://github.com/your-team/skillswap/issues/78](https://github.com/your-team/skillswap/issues/78)
-
-**Pull Request:** [https://github.com/your-team/skillswap/pull/461](https://github.com/your-team/skillswap/pull/461)
-
-**Implemented by:** [Team Member 3 Name]
-
-**Approved by:** [Team Member 2 Name]
-
-**Automated Tests:** [https://github.com/your-team/skillswap/blob/main/tests/test_reviews.py](https://github.com/your-team/skillswap/blob/main/tests/test_reviews.py)
-
-**Visual Evidence:**
-![Review System Interface](path/to/review-system-screenshot.png)
-
-#### 2.3.2 Notification System
-
-**Requirement:** As a user, I want to receive notifications about matches, session reminders, and messages so that I stay informed about my learning activities.
-
-**Issue:** [https://github.com/your-team/skillswap/issues/85](https://github.com/your-team/skillswap/issues/85)
-
-**Pull Request:** [https://github.com/your-team/skillswap/pull/468](https://github.com/your-team/skillswap/pull/468)
-
-**Implemented by:** [Team Member 3 Name]
-
-**Approved by:** [Team Member 1 Name]
-
-**Automated Tests:** [https://github.com/your-team/skillswap/blob/main/tests/test_notifications.py](https://github.com/your-team/skillswap/blob/main/tests/test_notifications.py)
-
-**Visual Evidence:**
-![Notification System Interface](path/to/notification-screenshot.png)
-
-### 2.4 [Team Member 4 Name]
-
-**Pull Requests Overview:** [https://github.com/your-team/skillswap/pulls?q=is%3Apr+author%3ATeamMember4](https://github.com/your-team/skillswap/pulls?q=is%3Apr+author%3ATeamMember4)
-
-![Pull Requests Screenshot](path/to/pr-screenshot-member4.png)
-
-#### 2.4.1 Expert Consultation Services
-
-**Requirement:** As a user, I want to access paid expert consultation services when I need specialized guidance that's not available through peer exchange.
-
-**Issue:** [https://github.com/your-team/skillswap/issues/92](https://github.com/your-team/skillswap/issues/92)
-
-**Pull Request:** [https://github.com/your-team/skillswap/pull/475](https://github.com/your-team/skillswap/pull/475)
-
-**Implemented by:** [Team Member 4 Name]
-
-**Approved by:** [Team Member 3 Name]
-
-**Automated Tests:** [https://github.com/your-team/skillswap/blob/main/tests/test_expert_services.py](https://github.com/your-team/skillswap/blob/main/tests/test_expert_services.py)
-
-**Visual Evidence:**
-![Expert Services Interface](path/to/expert-services-screenshot.png)
-
-#### 2.4.2 Community Groups
-
-**Requirement:** As a user, I want to join skill-focused groups so that I can connect with like-minded learners and participate in community discussions.
-
-**Issue:** [https://github.com/your-team/skillswap/issues/99](https://github.com/your-team/skillswap/issues/99)
-
-**Pull Request:** [https://github.com/your-team/skillswap/pull/482](https://github.com/your-team/skillswap/pull/482)
-
-**Implemented by:** [Team Member 4 Name]
-
-**Approved by:** [Team Member 1 Name]
-
-**Automated Tests:** [https://github.com/your-team/skillswap/blob/main/tests/test_groups.py](https://github.com/your-team/skillswap/blob/main/tests/test_groups.py)
-
-**Visual Evidence:**
-![Community Groups Interface](path/to/groups-screenshot.png)
 
 ## 3. Testing Strategy
 
@@ -215,3 +135,7 @@ The platform allows users to create customized profiles showcasing their experti
 
 ### 4.6 Docker
 **Description:**
+
+## 5. Learning Strategy
+
+Our team primarily relied on YouTube tutorials and official documentation for learning new technologies required for SkillSwap development. We extensively used Django, React, WebRTC, and PostgreSQL documentation alongside comprehensive YouTube video tutorials that provided practical implementation examples. Team members shared knowledge with each other and held code review sessions, with each person investing hours in self learning. This approach proved effective for mastering complex concepts and maintaining development momentum.
