@@ -1,0 +1,11 @@
+// __tests__/root.test.js
+const request = require("supertest");
+const app = require("../app");
+
+describe("Root Endpoint", () => {
+  it("GET / should return welcome message", async () => {
+    const res = await request(app).get("/");
+    expect(res.statusCode).toBe(200);
+    expect(res.text).toBe("Welcome to SkillSwap API");
+  });
+});
