@@ -77,69 +77,41 @@ The architecture follows a 4 layered approach with clear separation of concerns:
 
 ## 5. Design Patterns
 
-### 5.1 Observer Pattern
-
-The Observer pattern is implemented in the notification system to handle real-time updates for users about matches, session reminders, and messages.
+### 5.1 Strategy Pattern – Sessions
 
 <img width="3840" height="2884" alt="5 1" src="https://github.com/user-attachments/assets/90f46555-9984-4533-9f63-3ecfe5396ff8" />
 
-**GitHub Links:**
+**GitHub Link:** https://github.com/kp2469-Kaly/SkillSwap/blob/Kalyana/CODE/Sessions.java
 
-### 5.2 Strategy Pattern
-
-The Strategy pattern is used for different matching algorithms that can be applied based on user preferences and system configuration.
+### 5.2 Observer Pattern
 
 <img width="2137" height="3840" alt="5 2" src="https://github.com/user-attachments/assets/2a3b47a9-71e6-4538-8419-83aaf623db1e" />
 
-**GitHub Link:**
+**GitHub Link:** https://github.com/kp2469-Kaly/SkillSwap/tree/Kalyana/CODE
 
 ## 6. Design Principles
 
 ### Single Responsibility Principle (SRP)
 
-Our design follows SRP by ensuring each class has a single, well-defined responsibility:
+**Example:**
 
-- **UserService**: Handles only user-related operations (registration, profile management, authentication)
-- **MatchingService**: Focuses exclusively on finding compatible skill partners
-- **SessionManager**: Manages only session lifecycle (creation, scheduling, cancellation)
-- **NotificationService**: Handles only notification delivery and management
+* `NotificationService` only manages observers and alerts
+* `SessionService` only handles session creation logic
+* `ISessionStrategy` implementations each focus on one type of session behavior
 
-**Example**: The `User` class is responsible only for user data and basic user operations, while complex business logic like matching algorithms is delegated to `MatchingService`. This separation makes the code more maintainable and testable.
+### Open-Closed Principle (OCP)
+
+**Example:**
+
+* To support a new session type like `HybridSession`, we only implement it:
 
 ```java
-// User class focuses only on user data and basic operations
-public class User {
-    private String name, email, location;
-    private Profile profile;
-    
-    public void updateProfile(Profile profile) { /* simple assignment */ }
-    public void addSkill(Skill skill) { /* add to collection */ }
-}
-
-// MatchingService handles complex matching logic
-public class MatchingService {
-    public List<User> findMatches(User user) {
-        // Complex matching algorithm implementation
+public class HybridSession implements ISessionStrategy {
+    public void schedule() {
+        System.out.println("Hybrid session (online + offline)");
     }
 }
-```
-
-### Open/Closed Principle (OCP)
-
-The system is designed to be open for extension but closed for modification, particularly evident in our matching system:
-
-**Example**: The `MatchingStrategy` interface allows adding new matching algorithms without modifying existing code. New strategies like `HybridMatchingStrategy` or `AIBasedMatchingStrategy` can be added by implementing the interface without changing the `MatchingService` class.
-
-```java
-// Existing interface - closed for modification
-public interface MatchingStrategy {
-    List<User> findMatches(User user, List<User> candidates);
-}
-
-// New strategy can be added - open for extension
-public class AIBasedMatchingStrategy implements MatchingStrategy {
-    public List<User> findMatches(User user, List<User> candidates) {
-        // AI-based matching implementation
+ithm implementation
     }
 }
 ```
@@ -149,37 +121,3 @@ public class AIBasedMatchingStrategy implements MatchingStrategy {
 High-level modules depend on abstractions rather than concrete implementations:
 
 **Example**: The `SessionManager` depends on the abstract `NotificationService` interface rather than concrete notification implementations. This allows switching between email notifications, push notifications, or SMS without modifying the session management logic.
-
-```java
-public class SessionManager {
-    private NotificationService notificationService; // Depends on abstraction
-    
-    public void createSession(Session session) {
-        // Session creation logic
-        notificationService.sendNotification(notification); // Uses abstraction
-    }
-}
-```
-
-### Repository Pattern
-
-Data access is abstracted through repository interfaces, separating business logic from data persistence concerns:
-
-**Example**: The `UserRepository` interface abstracts database operations, allowing the business logic to remain independent of specific database implementations (MySQL, PostgreSQL, MongoDB, etc.).
-
-```java
-public interface UserRepository {
-    User save(User user);
-    Optional<User> findById(Long id);
-    List<User> findByLocation(Location location);
-}
-
-// Business logic depends on abstraction, not implementation
-public class UserService {
-    private UserRepository userRepository; // Interface dependency
-    
-    public User createUser(User user) {
-        return userRepository.save(user); // Uses abstraction
-    }
-}
-```
